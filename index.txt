@@ -38,5 +38,43 @@ Quanti sono gli insegnanti che non hanno un numero di telefono?
 
 SELECT COUNT(*) FROM `teachers` WHERE `phone` = 'null'
 
+---------------------------------
+---------------------------------
+
+Contare quanti iscritti ci sono stati ogni anno
+
+
+------------------
+
+Contare gli insegnanti che hanno l’ufficio nello stesso edificio
+
+
+
+-----------------
+
+Calcolare la media dei voti di ogni appello d’esame
+
+
+
+---------------------
+
+Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+
+
+-----------------
+
+Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
+
+SELECT degrees.name, * FROM students INNER JOIN degrees ON students.degree_id = degrees.id WHERE degrees.name LIKE '%Economia'
+
+-------------------
+
+Selezionare tutti i Corsi di Laurea del Dipartimento di Neuroscienze
+
+
+
+-----------------
+
 
 
